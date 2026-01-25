@@ -1,0 +1,233 @@
+================================================================================
+TARGET.COM BOT - SETUP INSTRUCTIONS FOR MAC
+================================================================================
+
+This guide will help you set up everything needed to run the Target.com bot
+on your Mac computer.
+
+================================================================================
+STEP 1: CHECK IF PYTHON IS INSTALLED
+================================================================================
+
+1. Open Terminal:
+   - Press Cmd + Space
+   - Type "Terminal" and press Enter
+   - OR go to Applications → Utilities → Terminal
+
+2. Check Python version:
+   Type this command and press Enter:
+   
+   python3 --version
+
+3. Expected result:
+   - If you see something like "Python 3.9.0" or higher → Python is installed ✓
+   - If you see "command not found" → You need to install Python (see Step 2)
+
+================================================================================
+STEP 2: INSTALL PYTHON (IF NOT INSTALLED)
+================================================================================
+
+Option A: Install using Homebrew (Recommended)
+----------------------------------------------
+1. First, install Homebrew (if not installed):
+   Copy and paste this command in Terminal:
+   
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+2. Install Python:
+   brew install python3
+
+Option B: Install from Official Website (Easier)
+------------------------------------------------
+1. Go to: https://www.python.org/downloads/
+2. Download the latest Python 3.x for macOS
+3. Run the installer and follow the instructions
+4. Make sure to check "Add Python to PATH" during installation
+
+After installation, verify again:
+   python3 --version
+
+================================================================================
+STEP 3: CHECK IF CHROME BROWSER IS INSTALLED
+================================================================================
+
+1. Check if Chrome is installed:
+   - Look for Chrome icon in Applications folder
+   - OR open Finder → Applications → look for "Google Chrome"
+
+2. If Chrome is NOT installed:
+   - Go to: https://www.google.com/chrome/
+   - Download and install Chrome for Mac
+
+Note: The bot uses Chrome browser, so Chrome must be installed.
+
+================================================================================
+STEP 4: CREATE PROJECT FOLDER
+================================================================================
+
+1. Open Terminal
+
+2. Navigate to Desktop (or any folder you prefer):
+   cd ~/Desktop
+
+3. Create a new folder for the project:
+   mkdir target-bot
+   
+4. Go into the folder:
+   cd target-bot
+
+================================================================================
+STEP 5: TRANSFER FILES TO PROJECT FOLDER
+================================================================================
+
+You need to have these files in your project folder:
+- login.py
+- autobot.py
+- requirements.txt
+
+Make sure all files are in the same folder (target-bot).
+
+================================================================================
+STEP 6: CREATE VIRTUAL ENVIRONMENT (.venv)
+================================================================================
+
+1. Make sure you are in the project folder:
+   cd ~/Desktop/target-bot
+   (or wherever you put the files)
+
+2. Create virtual environment:
+   python3 -m venv .venv
+
+3. Wait for it to finish (may take 1-2 minutes)
+
+================================================================================
+STEP 7: ACTIVATE VIRTUAL ENVIRONMENT
+================================================================================
+
+1. Activate the virtual environment:
+   source .venv/bin/activate
+
+2. You should see (.venv) at the beginning of your Terminal line
+   Example: (.venv) yourname@MacBook target-bot %
+
+3. IMPORTANT: You must activate .venv every time you open a new Terminal window
+   Always run: source .venv/bin/activate before running the bot
+
+================================================================================
+STEP 8: INSTALL REQUIRED LIBRARIES
+================================================================================
+
+1. Make sure virtual environment is activated (you see (.venv) in Terminal)
+
+2. Install libraries:
+   pip install -r requirements.txt
+
+3. Wait for installation to complete (may take 2-5 minutes)
+
+4. This will install SeleniumBase and all its dependencies
+
+================================================================================
+STEP 9: FIRST TIME LOGIN (SAVE SESSION)
+================================================================================
+
+1. Make sure virtual environment is activated:
+   source .venv/bin/activate
+
+2. Run the login script:
+   python3 login.py
+
+3. What will happen:
+   - Chrome browser will open automatically
+   - Target.com will load
+   - You need to manually login to your Target account
+   - After logging in successfully, go back to Terminal
+   - Press ENTER to save your login session
+
+4. A file named "target_session.pkl" will be created
+   This file saves your login, so you don't need to login again next time
+
+================================================================================
+STEP 10: RUN THE BOT
+================================================================================
+
+1. Make sure virtual environment is activated:
+   source .venv/bin/activate
+
+2. Run the bot:
+   python3 autobot.py
+
+3. The browser will open with your saved login session
+   You can now use the bot
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Problem: "python3: command not found"
+Solution: Install Python (see Step 2)
+
+Problem: "pip: command not found"
+Solution: Make sure virtual environment is activated (Step 7)
+
+Problem: "Permission denied" errors
+Solution: You may need to use "sudo" (not recommended) or fix permissions:
+   chmod +x .venv/bin/activate
+
+Problem: Chrome doesn't open
+Solution: Make sure Chrome is installed and updated to latest version
+
+Problem: "Module not found" errors
+Solution: Make sure you activated .venv and installed requirements:
+   source .venv/bin/activate
+   pip install -r requirements.txt
+
+Problem: Can't access target.com
+Solution: Make sure you have internet connection and target.com is accessible
+   (The bot uses UC Mode to avoid detection, but you still need internet)
+
+================================================================================
+QUICK REFERENCE - COMMANDS TO REMEMBER
+================================================================================
+
+# Navigate to project folder
+cd ~/Desktop/target-bot
+
+# Activate virtual environment (DO THIS FIRST every time)
+source .venv/bin/activate
+
+# Run login script (first time only)
+python3 login.py
+
+# Run the bot
+python3 autobot.py
+
+# Deactivate virtual environment (when done)
+deactivate
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+1. Always activate virtual environment before running scripts:
+   source .venv/bin/activate
+
+2. The login session (target_session.pkl) is saved in the project folder
+   Don't delete this file, or you'll need to login again
+
+3. If you get any errors, check:
+   - Is Python installed? (python3 --version)
+   - Is .venv activated? (you should see (.venv) in Terminal)
+   - Are all files in the same folder?
+   - Is Chrome installed?
+
+4. For security: The session file contains your login cookies
+   Keep it safe and don't share it with others
+
+================================================================================
+END OF INSTRUCTIONS
+================================================================================
+
+If you have any questions or encounter issues, please contact me.
+
+Good luck!
+

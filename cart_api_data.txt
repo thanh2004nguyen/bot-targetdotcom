@@ -1,0 +1,597 @@
+================================================================================
+CART API DATA - FULL RESPONSE
+================================================================================
+
+--------------------------------------------------------------------------------
+FULL JSON RESPONSE:
+--------------------------------------------------------------------------------
+{
+  "channel_id": "10",
+  "cart_id": "03e695f0-f101-11f0-a140-45ebd75042a5",
+  "test_cart": false,
+  "reference_id": "102003211796897",
+  "guest_id": "9c719dd0-675d-438b-87d4-1e1ad0cc09d8",
+  "cart_state": "PENDING",
+  "cart_type": "REGULAR",
+  "guest_type": "GUEST",
+  "guest_location": {
+    "zip_code": "52404",
+    "state": "IA",
+    "country": "US",
+    "latitude": "41.9831",
+    "longitude": "-91.6686"
+  },
+  "guest_profile": {
+    "preferred_store_id": "1771"
+  },
+  "shopping_context": "DIGITAL",
+  "shopping_location_id": "1771",
+  "shipt_available_memberships_type": [
+    "PAY_PER_ORDER"
+  ],
+  "eligible_paid_membership_types": [
+    "SUBSCRIPTION",
+    "TRIAL"
+  ],
+  "pay_per_order_charges": {
+    "ONE_DAY": 7.99,
+    "SCHEDULED_DELIVERY": 9.99
+  },
+  "summary": {
+    "total_discounts": 0,
+    "total_gift_wrap_amount": 0,
+    "total_product_amount": 54.53,
+    "total_shipping_discount": 5.99,
+    "total_shipping_amount": 5.99,
+    "total_shipping_tax": 0,
+    "total_tax": 3.82,
+    "total_surcharge_fee": 0,
+    "total_handling_fee": 0,
+    "total_handling_discount": 0,
+    "total_handling_fee_tax": 0,
+    "grand_total": 58.35,
+    "balance_due": 58.35,
+    "items_quantity": 4,
+    "discounts": [
+      {
+        "promotion_id": "357009177",
+        "promotion_group": "SHIP_2024 Global SW 35 FreeShip FS",
+        "discount_amount": 5.99,
+        "cart_level": true,
+        "discount_type": "SHIPPING",
+        "circle_offer": false,
+        "mass_offer": true,
+        "fire_fly_offer_type": "mass"
+      }
+    ],
+    "total_authorization_amount": 58.35,
+    "total_bag_fee": 0,
+    "red_card_banner": {
+      "order_total": "54.53",
+      "discounted_order_total": "51.80"
+    },
+    "eligible_snap_total": 4.19,
+    "eligible_snap_balance": 4.19,
+    "snap_total": 4.19,
+    "taxes": {
+      "total": 3.82,
+      "sales": 3.82,
+      "shipping": 0,
+      "handling_fee": 0,
+      "service_fee": 0,
+      "gift_wrap": 0
+    },
+    "delivery_charges": {
+      "total": 0,
+      "categories": [
+        {
+          "name": "shipping",
+          "total": 0,
+          "subtotal": 5.99,
+          "discount": 5.99,
+          "charges": [
+            {
+              "charge_type": "standard_shipping",
+              "guest_display_name": "Standard shipping",
+              "amount": 5.99
+            }
+          ]
+        }
+      ]
+    },
+    "max_eligible_amount_for_non_primary_tender": 57.35,
+    "qualified_medical_expense_total": 0
+  },
+  "cart_items": [
+    {
+      "cart_id": "03e695f0-f101-11f0-a140-45ebd75042a5",
+      "total_cart_item_quantity": 4,
+      "cart_item_id": "03e81c90-f101-11f0-8ab8-65213ce5a081",
+      "cart_item_type": "REGULARITEM",
+      "return_policy": [
+        {
+          "id": 18,
+          "type": "permanent",
+          "day_count": 30,
+          "user_type": "regular_guest",
+          "permanent_policy_id": 18,
+          "start_date": "2024-12-26",
+          "end_date": "2099-12-30",
+          "end_time": "23:59:59"
+        },
+        {
+          "id": 18,
+          "type": "permanent",
+          "day_count": 60,
+          "user_type": "best_guest",
+          "permanent_policy_id": 18,
+          "start_date": "2024-12-26",
+          "end_date": "2099-12-30",
+          "end_time": "23:59:59"
+        }
+      ],
+      "tcin": "93091699",
+      "dpci": "059-01-0252",
+      "quantity": 3,
+      "unit_price": 16.78,
+      "list_price": 16.78,
+      "current_price": 16.78,
+      "msrp": 30,
+      "eyebrow": "R",
+      "street_date": "2025-04-01",
+      "limited_quantity": false,
+      "available_quantity_in_inventory": 10,
+      "handling": {
+        "buy_unit_of_measure": "Each"
+      },
+      "fulfillment": {
+        "type": "SHIP",
+        "location_data": {},
+        "ship_method": "STANDARD",
+        "price": {
+          "shipping_price": 2.99,
+          "handling_price": 0,
+          "service_fee": 0
+        },
+        "estimated_arrival_start_date": "2026-01-16",
+        "estimated_arrival_end_date": "2026-01-16",
+        "ship_method_service_level_description": "2-day shipping",
+        "available_ship_methods": [
+          {
+            "type": "SHIP",
+            "ship_method": "STANDARD",
+            "estimated_arrival_start_date": "2026-01-16",
+            "estimated_arrival_end_date": "2026-01-16",
+            "preferred": true,
+            "base": true,
+            "selected": true,
+            "seasonal": false,
+            "ship_method_short_description": "Standard",
+            "ship_method_long_description": "Ground",
+            "ship_method_service_level_description": "2-day shipping",
+            "order_cutoff": "2026-01-14T19:00+0000",
+            "ship_date": "2026-01-14",
+            "location_id": "1767-2",
+            "two_day_shipping_eligible": true,
+            "line_consolidated": false,
+            "minimum_order_quantity": 1
+          }
+        ]
+      },
+      "item_attributes": {
+        "description": "Local Woman Missing Collector&#39;s Edition - by Mary Kubica (Hardcover)",
+        "image_path": "https://target.scene7.com/is/image/Target//GUEST_478bfef7-7ba7-4129-a649-c3e5d73e8f61",
+        "max_purchase_quantity": 10,
+        "product_subtype_name": "Books - MMBV",
+        "product_type_name": "ELECTRONICS"
+      },
+      "item_summary": {
+        "shipping_discount": 2.99,
+        "shipping_charge": 2.99,
+        "total_discount": 2.99,
+        "partial_discount": 0,
+        "total_product": 50.34,
+        "tax_amount": 3.53,
+        "price": 16.78,
+        "shipping_tax": 0,
+        "handling_fee": 0,
+        "surcharge_fee": 0,
+        "handling_fee_tax": 0,
+        "handling_fee_discount": 0,
+        "gift_wrap_fee": 0,
+        "gift_wrap_tax": 0,
+        "delivery_charge": 2.99,
+        "taxes": {
+          "total": 3.53,
+          "sales": 3.53,
+          "shipping": 0,
+          "handling_fee": 0,
+          "service_fee": 0,
+          "gift_wrap": 0
+        },
+        "total_list_price": 50.34,
+        "personalized_price": 50.34,
+        "personalized_price_has_discounts": false
+      },
+      "discounts": [
+        {
+          "promotion_id": "357009177",
+          "promotion_name": "SHIP_2024 Global SW 35 FreeShip FS",
+          "legal_description": "Offer applies to purchases of $35 or more, after all applicable promotions & discounts have been applied, not including tax. Offer valid for orders shipping to the contiguous United States as well as APO/FPO addresses. Offer excludes orders shipping to AK, HI & U.S. protectorates.",
+          "promotion_status": "APPLIED",
+          "cart_level": true,
+          "subscription_promo_flag": false,
+          "reward_type": "FixedPrice",
+          "reward_value": 0,
+          "promotion_group": "SHIP_2024 Global SW 35 FreeShip FS",
+          "applied": true,
+          "discount_amount": 2.99,
+          "discount_type": "SHIPPING",
+          "circle_offer": false,
+          "auto_applied": false,
+          "mass_offer": true,
+          "fire_fly_offer_type": "mass"
+        }
+      ],
+      "subscription": {},
+      "inventory_info": {
+        "availability_status": "IN_STOCK",
+        "location_type": "STORE",
+        "demand_type": "NETWORK",
+        "online_available_to_promise_quantity": 1,
+        "stores_available_to_promise_quantity": 1
+      },
+      "item_indicators": {
+        "is_store_pickup_eligible": false,
+        "is_ship_to_store_eligible": false,
+        "is_gift_wrap_eligible": false,
+        "is_gift_message_eligible": true,
+        "is_gift_options_eligible": true,
+        "is_third_party_giftcard": false,
+        "is_shipping_in_original_container": false,
+        "is_loyalty_purchase_eligible": false,
+        "is_add_on": false,
+        "is_free_gift": false,
+        "is_subscription": false,
+        "is_subscription_eligible": false,
+        "is_coming_soon": false,
+        "is_bulky": false,
+        "is_marketplace": false,
+        "is_pre_order": false,
+        "is_retail_ticketed": true,
+        "is_pickup_window_item": false,
+        "is_affirm_eligible": false,
+        "is_variable_price_item": false,
+        "is_snap_eligible": false,
+        "is_digital_gift_message_eligible": true,
+        "is_one_day_ppo_eligible": false,
+        "is_qualified_medical_expense_eligible": false
+      },
+      "created_at": "2026-01-14T04:25:11.129Z",
+      "updated_at": "2026-01-14T04:26:04.088Z",
+      "add_on_threshold": 35,
+      "item_add_channel": "10"
+    },
+    {
+      "cart_id": "03e695f0-f101-11f0-a140-45ebd75042a5",
+      "total_cart_item_quantity": 4,
+      "cart_item_id": "0dc1c770-f101-11f0-b51e-e71f43b4bcf7",
+      "cart_item_type": "REGULARITEM",
+      "return_policy": [
+        {
+          "id": 17,
+          "type": "permanent",
+          "day_count": 90,
+          "user_type": "regular_guest",
+          "permanent_policy_id": 17,
+          "start_date": "2021-04-19",
+          "end_date": "2099-12-30",
+          "end_time": "23:59:59"
+        },
+        {
+          "id": 17,
+          "type": "permanent",
+          "day_count": 120,
+          "user_type": "best_guest",
+          "permanent_policy_id": 17,
+          "start_date": "2021-04-19",
+          "end_date": "2099-12-30",
+          "end_time": "23:59:59"
+        }
+      ],
+      "tcin": "91843773",
+      "dpci": "055-02-0141",
+      "quantity": 1,
+      "unit_price": 4.19,
+      "list_price": 4.19,
+      "current_price": 4.19,
+      "msrp": 4.29,
+      "eyebrow": "R",
+      "limited_quantity": false,
+      "available_quantity_in_inventory": 10,
+      "handling": {
+        "buy_unit_of_measure": "Each"
+      },
+      "fulfillment": {
+        "type": "SHIP",
+        "location_data": {},
+        "ship_method": "STANDARD",
+        "price": {
+          "shipping_price": 3,
+          "handling_price": 0,
+          "service_fee": 0
+        },
+        "estimated_arrival_start_date": "2026-01-16",
+        "estimated_arrival_end_date": "2026-01-16",
+        "ship_method_service_level_description": "2-day shipping",
+        "available_ship_methods": [
+          {
+            "type": "SHIP",
+            "ship_method": "STANDARD",
+            "estimated_arrival_start_date": "2026-01-16",
+            "estimated_arrival_end_date": "2026-01-16",
+            "preferred": true,
+            "base": true,
+            "selected": true,
+            "seasonal": false,
+            "ship_method_short_description": "Standard",
+            "ship_method_long_description": "Ground",
+            "ship_method_service_level_description": "2-day shipping",
+            "order_cutoff": "2026-01-14T18:00+0000",
+            "ship_date": "2026-01-14",
+            "location_id": "9154-2",
+            "two_day_shipping_eligible": true,
+            "line_consolidated": false,
+            "minimum_order_quantity": 1
+          },
+          {
+            "type": "PICKUP",
+            "ship_method": "CURBSIDE",
+            "estimated_arrival_start_date": "2026-01-14",
+            "estimated_arrival_end_date": "2026-01-14",
+            "selected": false,
+            "order_cutoff": "2026-01-15T02:00+0000",
+            "ship_date": "2026-01-14",
+            "order_cancellation_days": 3,
+            "guest_pick_sla": 120,
+            "location_name": "Cedar Rapids South",
+            "location_id": "1771",
+            "minimum_order_quantity": 1
+          },
+          {
+            "type": "PICKUP",
+            "ship_method": "STORE_PICKUP",
+            "estimated_arrival_start_date": "2026-01-14",
+            "estimated_arrival_end_date": "2026-01-14",
+            "selected": false,
+            "order_cutoff": "2026-01-15T02:00+0000",
+            "ship_date": "2026-01-14",
+            "order_cancellation_days": 3,
+            "guest_pick_sla": 120,
+            "location_name": "Cedar Rapids South",
+            "location_id": "1771",
+            "minimum_order_quantity": 1
+          },
+          {
+            "type": "SHIP",
+            "ship_method": "SCHEDULED_DELIVERY",
+            "selected": false,
+            "ship_method_short_description": "Scheduled Delivery",
+            "minimum_order_quantity": 1
+          }
+        ]
+      },
+      "item_attributes": {
+        "description": "Skittles Sour Candy, Chewy Fruit Candies Share Size Bag - 13.7oz",
+        "image_path": "https://target.scene7.com/is/image/Target//GUEST_68d25614-b1a4-4b3a-8ba4-672145438e98",
+        "max_purchase_quantity": 10,
+        "product_subtype_name": "CANDY",
+        "product_type_name": "GROCERY"
+      },
+      "item_summary": {
+        "shipping_discount": 3,
+        "shipping_charge": 3,
+        "total_discount": 3,
+        "partial_discount": 0,
+        "total_product": 4.19,
+        "tax_amount": 0.29,
+        "price": 4.19,
+        "shipping_tax": 0,
+        "handling_fee": 0,
+        "surcharge_fee": 0,
+        "handling_fee_tax": 0,
+        "handling_fee_discount": 0,
+        "gift_wrap_fee": 0,
+        "gift_wrap_tax": 0,
+        "delivery_charge": 3,
+        "taxes": {
+          "total": 0.29,
+          "sales": 0.29,
+          "shipping": 0,
+          "handling_fee": 0,
+          "service_fee": 0,
+          "gift_wrap": 0
+        },
+        "total_list_price": 4.19,
+        "personalized_price": 4.19,
+        "personalized_price_has_discounts": false
+      },
+      "discounts": [
+        {
+          "promotion_id": "357009177",
+          "promotion_name": "SHIP_2024 Global SW 35 FreeShip FS",
+          "legal_description": "Offer applies to purchases of $35 or more, after all applicable promotions & discounts have been applied, not including tax. Offer valid for orders shipping to the contiguous United States as well as APO/FPO addresses. Offer excludes orders shipping to AK, HI & U.S. protectorates.",
+          "promotion_status": "APPLIED",
+          "cart_level": true,
+          "subscription_promo_flag": false,
+          "reward_type": "FixedPrice",
+          "reward_value": 0,
+          "promotion_group": "SHIP_2024 Global SW 35 FreeShip FS",
+          "applied": true,
+          "discount_amount": 3,
+          "discount_type": "SHIPPING",
+          "circle_offer": false,
+          "auto_applied": false,
+          "mass_offer": true,
+          "fire_fly_offer_type": "mass"
+        }
+      ],
+      "subscription": {},
+      "inventory_info": {
+        "availability_status": "IN_STOCK",
+        "location_type": "DISTRIBUTION_CENTER",
+        "demand_type": "NETWORK",
+        "online_available_to_promise_quantity": 1,
+        "stores_available_to_promise_quantity": 1
+      },
+      "item_indicators": {
+        "is_store_pickup_eligible": true,
+        "is_ship_to_store_eligible": false,
+        "is_gift_wrap_eligible": false,
+        "is_gift_message_eligible": true,
+        "is_gift_options_eligible": true,
+        "is_third_party_giftcard": false,
+        "is_shipping_in_original_container": false,
+        "is_loyalty_purchase_eligible": false,
+        "is_add_on": true,
+        "is_free_gift": false,
+        "is_subscription": false,
+        "is_subscription_eligible": false,
+        "is_coming_soon": false,
+        "is_bulky": false,
+        "is_marketplace": false,
+        "is_pre_order": false,
+        "is_retail_ticketed": false,
+        "is_pickup_window_item": false,
+        "is_affirm_eligible": false,
+        "is_variable_price_item": false,
+        "is_snap_eligible": true,
+        "is_digital_gift_message_eligible": true,
+        "is_one_day_ppo_eligible": false,
+        "is_qualified_medical_expense_eligible": false
+      },
+      "created_at": "2026-01-14T04:25:27.655Z",
+      "updated_at": "2026-01-14T04:26:04.088Z",
+      "add_on_threshold": 35,
+      "item_add_channel": "10"
+    }
+  ],
+  "indicators": {
+    "has_digital_delivery_item": false,
+    "has_gift_option_applied": false,
+    "has_registry_item": false,
+    "has_scheduled_delivery_item": false,
+    "has_ship_to_store_item": false,
+    "has_store_pickup_item": false,
+    "has_subscription_item": false,
+    "has_shipping_required_item": true,
+    "has_payment_applied": false,
+    "has_payment_satisfied": false,
+    "has_only_giftcard_items": false,
+    "has_address_associated_all": false,
+    "has_only_giftcard_tender": false,
+    "has_paypal_tender_enabled": true,
+    "has_applepay_tender_enabled": true,
+    "has_giftcard_tender_enabled": true,
+    "has_thirdparty_tender_enabled": true,
+    "has_target_tender_enabled": true,
+    "has_target_debit_card_tender_enabled": true,
+    "has_store_front_item": false,
+    "is_credit_card_compare_required": false,
+    "would_credit_card_compare_be_required": false,
+    "has_estimated_delivery_date_modified": false,
+    "has_circle_applied": false,
+    "has_pickup_window_item": false,
+    "has_curbside_item": false,
+    "has_adult_beverage_item": false,
+    "has_adult_beverage_pickup": false,
+    "has_adult_beverage_shipt": false,
+    "is_additional_card_required": true,
+    "is_address_required_for_digital_tax": false,
+    "allows_alcohol": false,
+    "has_variable_price_item": false,
+    "is_no_rush_available": false,
+    "is_one_day_ppo_available": false,
+    "is_all_pickup_available": false,
+    "is_all_driveup_available": false,
+    "is_all_sdd_available": false,
+    "allow_substitution": false,
+    "max_cards_allowed_for_split_payment": 2,
+    "is_cart_eligible_for_split_payment": true,
+    "minimum_amount_required_for_non_primary_tender": 1,
+    "is_cart_view_eligible_for_consolidation": false,
+    "is_checkout_view_eligible_for_consolidation": true,
+    "contains_gift": false,
+    "is_cashapp_eligible": true
+  },
+  "scheduled_delivery_windows": {},
+  "created_at": "2026-01-14T04:25:11.119Z",
+  "updated_at": "2026-01-14T04:26:04.088Z",
+  "is_early_delivery_allowed": false,
+  "is_door_delivery_required": true,
+  "add_on_threshold": 35,
+  "cart_preferences": {
+    "use_no_rush": false,
+    "opt_all_pickup": false,
+    "opt_all_driveup": false,
+    "opt_all_sdd": false,
+    "use_one_day": false
+  },
+  "available_offers": {}
+}
+
+--------------------------------------------------------------------------------
+SUMMARY INFORMATION:
+--------------------------------------------------------------------------------
+Total Product Amount: $54.53
+Total Shipping Amount: $5.99
+Total Shipping Discount: $5.99
+Total Tax: $3.82
+Grand Total: $58.35
+Items Quantity: 4
+
+--------------------------------------------------------------------------------
+FREE SHIPPING STATUS:
+--------------------------------------------------------------------------------
+Free Shipping: YES ✓
+Shipping Total: $5.99
+Shipping Discount: $5.99
+Delivery Charges Total: $0.00
+  Shipping Subtotal: $5.99
+  Shipping Discount: $5.99
+  Shipping Total: $0.00
+
+--------------------------------------------------------------------------------
+CART ITEMS:
+--------------------------------------------------------------------------------
+Total Items: 2
+
+Item 1:
+  Description: Local Woman Missing Collector's Edition - by Mary Kubica (Hardcover)
+  TCIN: 93091699
+  Quantity: 3
+  Unit Price: $16.78
+  Current Price: $16.78
+  List Price: $16.78
+  Total Product: $50.34
+  Price: $16.78
+  Tax Amount: $3.53
+  Shipping Discount: $2.99
+  Shipping Charge: $2.99
+  Discounts:
+    - SHIP_2024 Global SW 35 FreeShip FS: $2.99
+
+Item 2:
+  Description: Skittles Sour Candy, Chewy Fruit Candies Share Size Bag - 13.7oz
+  TCIN: 91843773
+  Quantity: 1
+  Unit Price: $4.19
+  Current Price: $4.19
+  List Price: $4.19
+  Total Product: $4.19
+  Price: $4.19
+  Tax Amount: $0.29
+  Shipping Discount: $3.00
+  Shipping Charge: $3.00
+  Discounts:
+    - SHIP_2024 Global SW 35 FreeShip FS: $3.00
